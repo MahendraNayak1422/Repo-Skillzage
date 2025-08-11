@@ -15,8 +15,8 @@ export default function Footer() {
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link></li>           
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#">About</a></li>
+            <li><Link to="/dashboard" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Courses</Link></li>
+            <li><Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</Link></li>
           </ul>
         </div>
 

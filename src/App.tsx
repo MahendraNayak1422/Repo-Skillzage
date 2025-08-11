@@ -15,6 +15,7 @@ import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TnC from "../pages/Terms&Conditions";
 import RefundPolicy from "../pages/RefundPolicy";
 import ContactUs from "../pages/ContactUs";
+import About from "../pages/About";
 import ScrollToTop from "../components/ScrollToTop";
 
 
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="/terms-and-conditions" element={<TnC />} />
             <Route path="/refund-policy" element={<div className="page"><RefundPolicy /></div>} />
             <Route path="/contact-us" element={<div className="page"><ContactUs /></div>} />
+            <Route path="/about" element={<div className="page"><About /></div>} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/dashboard" element={<StudentDashboard />} />
             <Route path="/course/:courseId" element={<CourseLearning />} />
