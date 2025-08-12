@@ -190,7 +190,7 @@ const Auth = () => {
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
             <img
-              src="src\\assets\\skillzage_logo.png"
+              src="./skillzage_logo.png"
               alt="Skillzage Logo"
               className="logo"
               loading="lazy"

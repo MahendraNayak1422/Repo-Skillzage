@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "deploy-demo-skillzage"
+  },
+  "targets": {
+    "deploy-demo-skillzage": {
+      "hosting": {
+        "default": [
+          "deploy-demo-skillzage"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
