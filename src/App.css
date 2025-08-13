@@ -2543,6 +2543,7 @@ lite-youtube::before {
 /* PRIVACY SECTION STYLES */
 .privacy-section {
   font-family: 'Poppins', sans-serif;
+  text-align: justify;
 }
 
 .privacy-container {
@@ -2550,6 +2551,7 @@ lite-youtube::before {
   max-width: 1100px;
   line-height: 1.7;
   padding: 30px;
+  text-align: justify;
 
 }
 
@@ -2582,6 +2584,7 @@ lite-youtube::before {
   padding: 30px;
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .terms-title {
@@ -2625,6 +2628,7 @@ lite-youtube::before {
 .refund-section {
   font-family: 'Poppins', sans-serif;
   color: #111;
+  text-align: justify;
 }
 
 .refund-container {
@@ -2632,6 +2636,7 @@ lite-youtube::before {
   margin: 50px auto;
   line-height: 1.7;
   padding: 30px;
+  text-align: justify;
 }
 
 .refund-title {
