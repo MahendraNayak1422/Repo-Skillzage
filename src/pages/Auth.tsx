@@ -8,8 +8,11 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Checkbox } from '@/components/ui/checkbox';
+import logo from "/src/assets/skillzage-logo-final.svg";
+
 import { useToast } from '@/hooks/use-toast';
 import { Loader2, GraduationCap } from 'lucide-react';
+
 
 const Auth = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -176,25 +179,22 @@ const Auth = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-orange-100 via-rose-50 to-amber-50">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#fff0e1] via-[#ffd4b3] to-[#ffb380]">
 
       {/* ✅ Back to Home Link */}
-      <Link
-        to="/"
-        className="mb-6 text-orange-600 hover:text-orange-800 underline text-sm"
-      >
-        ← Back to Home
-      </Link>
+      
 
-      <Card className="w-full max-w-md border-orange-200 shadow-xl bg-white/95 backdrop-blur-sm">
+      <Card className="w-full max-w-md border-2 border-black shadow-5xl bg-gradient-to-br from-[#fff0e1] via-[#ffd9b3] to-[#ffb380]">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
+            <Link to = '/'>
             <img
-              src="./skillzage_logo.png"
+              src={logo}
               alt="Skillzage Logo"
               className="logo"
               loading="lazy"
             />
+            </Link>
           </div>
           <CardTitle className="text-2xl text-slate-700">Skillzage</CardTitle>
           <CardDescription className="text-slate-500">
@@ -395,6 +395,12 @@ const Auth = () => {
           </Tabs>
         </CardContent>
       </Card>
+      <Link
+        to="/"
+        className="mt-[10px] inline-block mb-6 bg-orange-300 text-orange-800 hover:bg-orange-400 hover:text-orange-900 rounded px-[5px] py-[5px] text-sm font-medium"
+      >
+        ← Back to Home
+      </Link>
     </div>
   );
 };

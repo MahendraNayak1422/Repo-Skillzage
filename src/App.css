@@ -2582,7 +2582,6 @@ lite-youtube::before {
   padding: 30px;
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
-  text-align: justify;
 }
 
 .terms-title {
@@ -2626,7 +2625,6 @@ lite-youtube::before {
 .refund-section {
   font-family: 'Poppins', sans-serif;
   color: #111;
-  text-align: justify;
 }
 
 .refund-container {

@@ -82,7 +82,10 @@ const Navbar = () => {
           <a href="#services" onClick={() => navigateToSection("services")}>Services</a>
           <a href="#courses" onClick={() => navigateToSection("courses")}>Learning Hub</a>
           <Link to="/" onClick={closeMenu}>Exam Builder</Link>
-          <Link to="/" onClick={closeMenu}>Resume AI</Link>
+          <a href="https://skillzageresume.web.app/">
+            Exam Builder
+          </a>
+
         </div>
 
         <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
@@ -91,7 +94,7 @@ const Navbar = () => {
           <span></span>
         </div>
 
-      {/* Original login and signup buttons  */}
+        {/* Original login and signup buttons  */}
         {/* <div className="auth-buttons">
           {!user && (
             <>
