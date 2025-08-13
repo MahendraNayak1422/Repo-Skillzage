@@ -83,7 +83,7 @@ const Navbar = () => {
           <a href="#courses" onClick={() => navigateToSection("courses")}>Learning Hub</a>
           <Link to="/" onClick={closeMenu}>Exam Builder</Link>
           <a href="https://skillzageresume.web.app/">
-            Exam Builder
+            Resume AI
           </a>
 
         </div>
