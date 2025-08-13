@@ -256,7 +256,7 @@ const AdminDashboard = () => {
           <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="universities" className="flex items-center space-x-2">
               <University className="h-4 w-4" />
-              <span>Universities</span>
+              <span>Institutions</span>
             </TabsTrigger>
             <TabsTrigger value="courses" className="flex items-center space-x-2">
               <BookOpen className="h-4 w-4" />
@@ -286,17 +286,17 @@ const AdminDashboard = () => {
               <CardContent>
                 <form onSubmit={handleCreateUniversity} className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="university-name">University Name</Label>
+                    <Label htmlFor="university-name">Institution Name</Label>
                     <Input
                       id="university-name"
                       value={newUniversityName}
                       onChange={(e) => setNewUniversityName(e.target.value)}
-                      placeholder="Enter university name"
+                      placeholder="Enter institution name"
                       required
                     />
                   </div>
                   <Button type="submit" disabled={isLoading}>
-                    Create University
+                    Create institution
                   </Button>
                 </form>
               </CardContent>
@@ -430,7 +430,7 @@ const AdminDashboard = () => {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="public">Public</SelectItem>
-                          <SelectItem value="university">University Only</SelectItem>
+                          <SelectItem value="university">Institution Only</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -454,7 +454,7 @@ const AdminDashboard = () => {
 
                   {courseForm.type === 'university' && (
                     <div className="space-y-2">
-                      <Label htmlFor="course-university">University</Label>
+                      <Label htmlFor="course-university">Institution</Label>
                       <Select
                         value={courseForm.university_id}
                         onValueChange={(value) => setCourseForm({ ...courseForm, university_id: value })}
