@@ -277,10 +277,10 @@ const AdminDashboard = () => {
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <Plus className="h-5 w-5" />
-                  <span>Add New University</span>
+                  <span>Add New Educational Institutions</span>
                 </CardTitle>
                 <CardDescription>
-                  Create a new university and generate an access code
+                  Create a new institution and generate an access code
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -304,9 +304,9 @@ const AdminDashboard = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Existing Universities</CardTitle>
+                <CardTitle>Existing Institutions</CardTitle>
                 <CardDescription>
-                  Manage your universities and view access codes
+                  Manage your Institutions and view access codes
                 </CardDescription>
               </CardHeader>
               <CardContent>
